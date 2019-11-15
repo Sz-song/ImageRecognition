@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clipChildren="false">
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/line"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_shejiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_shejiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_shejiao"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/shejiao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="社交" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navigation_shibie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_shibie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_shibie"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/shibie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="识别" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navigation_baike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_baike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_baike"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/baike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="百科" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navigation_wode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_wode"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/wode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="我的" />
+        </LinearLayout>
+
+
+       </LinearLayout>
+</RelativeLayout>
